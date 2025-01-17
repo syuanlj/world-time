@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/world-time/static/css/main.8f57e9de.css",
+    "main.js": "/world-time/static/js/main.0383c5ed.js",
+    "static/media/wood.png": "/world-time/static/media/wood.46fde34a5a0355ca0b6c.png",
+    "index.html": "/world-time/index.html",
+    "main.8f57e9de.css.map": "/world-time/static/css/main.8f57e9de.css.map",
+    "main.0383c5ed.js.map": "/world-time/static/js/main.0383c5ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f57e9de.css",
+    "static/js/main.0383c5ed.js"
+  ]
+}
