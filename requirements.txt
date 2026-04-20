@@ -1,0 +1,40 @@
+# VnPy 核心依赖
+vnpy>=4.0.0
+
+# CTA 策略模块
+vnpy-ctastrategy>=1.0.0
+vnpy-ctabacktester>=1.0.0
+
+# 数据管理模块
+vnpy-datamanager>=1.0.0
+
+# 数据库支持
+vnpy-sqlite>=1.0.0
+
+# 可选：交易接口网关（根据需求启用）
+# vnpy-ctp>=1.0.0        # CTP 期货接口
+# vnpy-xtp>=1.0.0        # XTP 证券接口
+# vnpy-ib>=1.0.0         # IB 国际接口
+# vnpy-mini>=1.0.0       # 迷你期货接口
+# vnpy-femas>=1.0.0      # FEMAS 期货接口
+# vnpy-sopt>=1.0.0       # SOPT 期权接口
+# vnpy-uft>=1.0.0        # UFT 接口
+# vnpy-esunny>=1.0.0     # 易盛接口
+# vnpy-tap>=1.0.0        # Tap 接口
+# vnpy-da>=1.0.0         # DA 接口
+# vnpy-rohon>=1.0.0      # Rohon 接口
+# vnpy-tts>=1.0.0        # TTS 模拟接口
+
+# 可选：其他应用模块
+# vnpy-paperaccount>=1.0.0   # 模拟交易
+# vnpy-spreadtrading>=1.0.0  # 价差交易
+# vnpy-algotrading>=1.0.0    # 算法交易
+# vnpy-optionmaster>=1.0.0   # 期权大师
+# vnpy-portfoliostrategy>=1.0.0  # 组合策略
+# vnpy-scripttrader>=1.0.0   # 脚本交易
+# vnpy-chartwizard>=1.0.0    # 图表向导
+# vnpy-rpcservice>=1.0.0     # RPC 服务
+# vnpy-datarecorder>=1.0.0   # 数据记录器
+# vnpy-riskmanager>=1.0.0    # 风险管理
+# vnpy-webtrader>=1.0.0      # Web 交易
+# vnpy-portfoliomanager>=1.0.0  # 组合管理
