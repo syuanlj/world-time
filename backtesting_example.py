@@ -88,7 +88,7 @@ def run_optimization():
     
     # 运行优化
     print("正在运行参数优化...")
-    results = engine.run_optimization(setting, use_ga=False)
+    results = engine.run_optimization(setting, output=False)
     
     # 打印优化结果
     print("\n" + "="*50)
