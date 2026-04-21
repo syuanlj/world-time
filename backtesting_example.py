@@ -18,10 +18,10 @@ def run_backtesting():
     
     # 配置回测参数
     engine.set_parameters(
-        vt_symbol="IF888.CFFEX",      # 合约代码（股指期货主力连续）
+        vt_symbol="IF0.CFFEX",        # 合约代码（沪深 300 股指期货主力连续）
         interval=Interval.MINUTE,     # K 线周期：分钟线
-        start=datetime(2023, 1, 1),   # 回测开始日期
-        end=datetime(2023, 12, 31),   # 回测结束日期
+        start=datetime(2026, 4, 15),  # 回测开始日期（使用实际数据日期）
+        end=datetime(2026, 4, 21),    # 回测结束日期
         rate=0.0001,                  # 手续费率
         slippage=0.2,                 # 滑点设置
         size=300,                     # 合约乘数
@@ -66,15 +66,15 @@ def run_optimization():
     
     # 配置回测参数
     engine.set_parameters(
-        vt_symbol="IF888.CFFEX",
-        interval=Interval.MINUTE,
-        start=datetime(2023, 1, 1),
-        end=datetime(2023, 6, 30),
-        rate=0.0001,
-        slippage=0.2,
-        size=300,
-        pricetick=0.2,
-        capital=1_000_000,
+        vt_symbol="IF0.CFFEX",        # 合约代码（沪深 300 股指期货主力连续）
+        interval=Interval.MINUTE,     # K 线周期：分钟线
+        start=datetime(2026, 4, 15),  # 回测开始日期
+        end=datetime(2026, 4, 21),    # 回测结束日期
+        rate=0.0001,                  # 手续费率
+        slippage=0.2,                 # 滑点设置
+        size=300,                     # 合约乘数
+        pricetick=0.2,                # 最小价格变动
+        capital=1_000_000,            # 初始资金
     )
     
     # 添加策略
@@ -88,7 +88,7 @@ def run_optimization():
     
     # 运行优化
     print("正在运行参数优化...")
-    results = engine.run_optimization(setting, output=False)
+    results = engine.run_optimization(setting, output=True)
     
     # 打印优化结果
     print("\n" + "="*50)
